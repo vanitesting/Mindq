@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Demo project" >
+
+	
+	<test name="Login Testing">
+	
+	
+	
+		<classes>
+					<class name="BDD.Cucumber.TestRunner"></class>
+		           
+					
+			
+			</classes>
+			
+		
+	</test>
+	
+	
+	
+	
+	
+</suite>

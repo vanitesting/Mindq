@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,332</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">BDD.Cucumber.TestRunner</td><td><a href="#m0">tearDownClass</a></td><td rowspan="1">1696249588084</td><td rowspan="1">280</td></tr><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BDD.Cucumber.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1696249586175</td><td rowspan="1">1891</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">BDD.Cucumber.TestRunner#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.VerifyError: Bad &lt;init&gt; method call
+Exception Details:
+  Location:
+    freemarker/core/BuiltInsForStringsBasic$lengthBI.&lt;init&gt;()V @1: invokespecial
+  Reason:
+    Type uninitialized 28789 is not assignable to &apos;freemarker/core/BuiltInsForStringsBasic$lengthBI&apos;
+  Bytecode:
+    0x0000000: 2ab7 0001 b1                           
+
+	at freemarker.core.BuiltIn.&lt;clinit&gt;(BuiltIn.java:244)
+	at freemarker.core.FMParser.BuiltIn(FMParser.java:1201)
+	at freemarker.core.FMParser.PrimaryExpression(FMParser.java:595)
+	at freemarker.core.FMParser.UnaryExpression(FMParser.java:707)
+	at freemarker.core.FMParser.MultiplicativeExpression(FMParser.java:822)
+	at freemarker.core.FMParser.AdditiveExpression(FMParser.java:774)
+	at freemarker.core.FMParser.RangeExpression(FMParser.java:950)
+	at freemarker.core.FMParser.RelationalExpression(FMParser.java:902)
+	at freemarker.core.FMParser.EqualityExpression(FMParser.java:865)
+	at freemarker.core.FMParser.AndExpression(FMParser.java:1017)
+	at freemarker.core.FMParser.OrExpression(FMParser.java:1039)
+	at freemarker.core.FMParser.Expression(FMParser.java:552)
+	at freemarker.core.FMParser.Assign(FMParser.java:2415)
+	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3643)
+	at freemarker.core.FMParser.MixedContentElements(FMParser.java:4019)
+	at freemarker.core.FMParser.If(FMParser.java:1792)
+	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3629)
+	at freemarker.core.FMParser.MixedContentElements(FMParser.java:4019)
+	at freemarker.core.FMParser.Root(FMParser.java:4665)
+	at freemarker.template.Template.&lt;init&gt;(Template.java:252)
+	at freemarker.cache.TemplateCache.loadTemplate(TemplateCache.java:548)
+	at freemarker.cache.TemplateCache.getTemplateInternal(TemplateCache.java:439)
+	at freemarker.cache.TemplateCache.getTemplate(TemplateCache.java:292)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2822)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2671)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:155)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.access$100(ExtentHtmlReporter.java:29)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter$1.onNext(ExtentHtmlReporter.java:122)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter$1.onNext(ExtentHtmlReporter.java:114)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+	at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:63)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:111)
+	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:98)
+	at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">BDD.Cucumber.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to login to the application&quot;</td><td>&quot;Login feature file&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.2&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at Basepackage.BaseClass.applicationlaunch(BaseClass.java:18)
+	at StepDefinitionspackage.LoginStepDefinition.user_is_in_login_page(LoginStepDefinition.java:20)
+	at ✽.user is in login page(file:///E:/Mindq/BDDCucumber/feature/logintestcase.feature:5)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:239)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at Basepackage.BaseClass.applicationlaunch(BaseClass.java:18)
+	at StepDefinitionspackage.LoginStepDefinition.user_is_in_login_page(LoginStepDefinition.java:20)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

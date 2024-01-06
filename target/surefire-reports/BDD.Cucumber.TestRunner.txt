@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: BDD.Cucumber.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.112 s <<< FAILURE! - in BDD.Cucumber.TestRunner
+runScenario(BDD.Cucumber.TestRunner)  Time elapsed: 1.935 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DELL-PC', ip: '192.168.1.2'
+Caused by: org.openqa.selenium.WebDriverException: 
+Driver server process died prematurely.
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+
+tearDownClass(BDD.Cucumber.TestRunner)  Time elapsed: 2.197 s  <<< FAILURE!
+java.lang.VerifyError: 
+Bad <init> method call
+Exception Details:
+  Location:
+    freemarker/core/BuiltInsForStringsBasic$lengthBI.<init>()V @1: invokespecial
+  Reason:
+    Type uninitialized 28789 is not assignable to 'freemarker/core/BuiltInsForStringsBasic$lengthBI'
+  Bytecode:
+    0x0000000: 2ab7 0001 b1                           
+
+
